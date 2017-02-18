@@ -1,0 +1,9 @@
+[Unit]
+Description=Configure GPIB interface
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/gpib_config
+
+[Install]
+WantedBy=multi-user.target
